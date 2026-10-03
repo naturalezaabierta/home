@@ -45,15 +45,13 @@ window.NA_TESTIMONIOS = [
     if (caja.dataset.listo) return;
     caja.dataset.listo = '1';
     const id = caja.dataset.id;
-    const s = document.createElement('script');
-    s.type = 'module';
-    s.async = true;
-    s.src = 'https://fast.wistia.com/embed/' + id + '.js';
-    document.head.appendChild(s);
-    const p = document.createElement('wistia-player');
-    p.setAttribute('media-id', id);
-    p.setAttribute('aspect', '0.5625');
-    caja.replaceChildren(p);
+    const f = document.createElement('iframe');
+    f.src = 'https://fast.wistia.net/embed/iframe/' + id + '?videoFoam=true';
+    f.title = 'Testimonio';
+    f.allow = 'autoplay; fullscreen';
+    f.setAttribute('allowfullscreen', '');
+    f.setAttribute('loading', 'lazy');
+    caja.replaceChildren(f);
   }
 
   const io = 'IntersectionObserver' in window
