@@ -30,7 +30,7 @@ em{color:var(--dorado-claro)}
 .testimonios-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
 .testimonio-card{background:#fff;border:1px solid rgba(201,168,76,.32);border-radius:22px;padding:10px;box-shadow:0 14px 35px rgba(17,42,30,.12);overflow:hidden}
 .testimonio-video{border-radius:16px;overflow:hidden;background:#0d1f10;aspect-ratio:9/16}
-.testimonio-video wistia-player{display:block;width:100%;height:100%}
+.testimonio-video iframe{display:block;width:100%;height:100%;border:0}
 .leyenda{padding:13px 8px 7px;text-align:center;font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.2;color:var(--verde-oscuro)}
 .mas{text-align:center;margin-top:38px}
 .btn{display:inline-block;background:linear-gradient(135deg,var(--dorado),var(--dorado-claro));color:var(--verde-oscuro);border-radius:50px;padding:16px 28px;font-weight:600;font-size:14px;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 10px 28px rgba(201,168,76,.28);border:0;cursor:pointer;font-family:Jost,sans-serif}
@@ -56,7 +56,6 @@ footer{background:#0d1f10;color:rgba(232,245,238,.62);padding:30px 0;font-size:1
 </main>
 <footer><div class="wrap">© 2026 Naturaleza Abierta · Bienestar y acompañamiento humano.</div></footer>
 
-<script src="https://fast.wistia.com/player.js" async></script>
 <script src="/testimonios.js"></script>
 <script>
   const LOTE = 8;
