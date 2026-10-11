@@ -7,7 +7,7 @@
    Se guarda este archivo en GitHub y las dos páginas se actualizan solas.
    ========================================================== */
 window.NA_TESTIMONIOS = [
-  { id: "3fpda69kkp", nombre: "", tema: "" },
+  { id: "3fpda69kkp", Brexey: "", Testimonio: "" },
   { id: "k4hj2c9jdb", nombre: "", tema: "" },
   { id: "qcp7t98tbn", nombre: "", tema: "" },
   { id: "6bi8f4zgnm", nombre: "", tema: "" },
